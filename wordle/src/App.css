@@ -61,18 +61,18 @@ nav h1 {
   margin: 5px;
   display: grid;
   place-items: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bolder;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #correct {
-  background-color: #528d4e;
+  background-color: #10f400;
 }
 
 #almost {
-  background-color: #b49f39;
+  background-color: #fad000;
 }
 
 #error {
@@ -109,8 +109,8 @@ nav h1 {
 }
 
 .key {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 5px;
   border-radius: 4px;
   display: grid;
@@ -125,8 +125,26 @@ nav h1 {
   background-color: rgb(0, 255, 26);
 }
 #big {
-  width: 100px;
+  width: 80px;
 }
 #disabled {
   background-color: #ff0000;
+}
+
+@media screen and (max-width:700px){
+   .key{
+    width: 30px;
+    height: 35px;
+   }
+}
+@media screen and (max-width:550px){
+  .key{
+   width: 20px;
+   height: 23px;
+   font-size: 13px;
+  }
+  .board{
+    width: 300px;
+    height: 450px;
+  }
 }
